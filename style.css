@@ -1,4 +1,5 @@
-
+/* CSS Styling for Samuel's website*/
+/* author: Nicholas Cohenour */
 *{
     box-sizing:border-box;
 }
@@ -40,6 +41,7 @@ a{
     text-decoration:none;
     color:white;
 }
+/* Full text justification */
 .fulljustify{
     text-align: justify;
 }
@@ -48,7 +50,53 @@ a{
     display: inline-block;
     width: 100%;
 }
+
+/* Darren block below the issue description */
 #darren{
     position: absolute;
     padding-top:10px;
+}
+/* Full body border styling */
+#top, #bottom, #left, #right {
+	background: #a5ebff;
+	position: fixed;
+	}
+#left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+#top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+/* Navigation bar styling */
+#top_nav {
+    position:absolute;
+    height:22vh;
+    width:100vw;
+    /* background-color:orange; */
+}
+
+#top_nav:hover > nav{
+    background-color:green;
+    opacity: 0.9;   
+    visibility: visible; 
+}
+
+#barcode {
+    width: 15vw; 
+    height: 10vh; 
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+div > nav {
+    display:block;
 }

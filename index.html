@@ -1,10 +1,17 @@
+<!-- HTML for Samuel's website -->
+<!-- Author: Nicholas Cohenour -->
+<!-- 
+To do:
+- barcode at top left that transitions into a navigation bar when hovered over
+    + this transition should stay while the user navigates through the choices
+    + to do this, we should probably have the hover effect on the div itself, and have 
+        the other elements revealed when the div is hovered over?
+
+someotheihtiewhothw
+
+
+--> 
 <html>
-    <!-- To do:
-    - barcode that becomes nav bar of different issues
-    
-    
-    
-    -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&display=swap" rel="stylesheet">
@@ -25,8 +32,24 @@
             <a href = 'https://www.youtube.com/watch?v=k2FguXvqp60'><i id = 'darren'>darren</i></a>
         </div>
 
+        <!-- add invisible div to house the border -->
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="top"></div>
+        <div id="bottom"></div>
+
         <!-- nav bar at the top with the different issues -->
         <!-- this should be the barcode thing -->
+        <div id = 'top_nav'>
+            <img src = 'barcode_reference.jpg' id = 'barcode' style ='float:left;'>
+            <nav style='float:left; padding-top: 30px;opacity:1; '>
+                <a href="">issue 1</a>
+                <a href="">issue 2</a>
+                <a href="">issue 3</a>
+                <a href="">issue 4</a>
+                <a href="">issue 5</a>
+            </nav>
+        </div>
         
     </body>
 
